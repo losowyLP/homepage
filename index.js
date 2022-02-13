@@ -1,3 +1,4 @@
+// losowyLP can code js!?!??!?!?!?!!!?111?!!?11?
 let val = 0
 
 document.addEventListener("keydown", e => {
