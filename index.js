@@ -1,13 +1,3 @@
-var i = 0
-var txt = 'Welcome' /* The text */
-var speed = 50 /* The speed/duration of the effect in milliseconds */
-
-if (i < txt.length) {
-	document.getElementById('tw').innerHTML += txt.charAt(i)
-	i++
-	setTimeout(typeWriter, speed)
-}
-
 document.addEventListener('keydown', (e) => {
 	switch (e.key.toLowerCase()) {
 		case '1':
