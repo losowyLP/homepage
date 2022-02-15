@@ -1,3 +1,13 @@
+key = 'e6e4525b8870b3f08c362da4c1d63f32'
+city = 'sandnes'
+
+fetch(`https://api.openweathermap.org/data/2.5/weather?q=${city}&units=metric&appid=${key}`)
+	.then((res) => res.json())
+	.then((data) => {
+		console.log(data)
+		document.getElementById('weather').innerText = `${data.weather[0].main}`
+	})
+
 document.addEventListener('keydown', (e) => {
 	switch (e.key.toLowerCase()) {
 		case '1':
