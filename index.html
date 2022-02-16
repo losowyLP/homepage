@@ -2,8 +2,7 @@
 <html lang="en">
 <head>
     <meta charset="UTF-8"/>
-    <title>Startpage</title>
-    <script src="index.js"></script>
+    <title>Homepage</title>
     <link rel="stylesheet" href="styles.css"/>
     <link rel="stylesheet" href="animations.css"/>
 </head>
@@ -11,44 +10,10 @@
 <p id="weather"></p>
 
 <h1 id="tw"></h1>
-<script>
-var i = 0;
-var txt = 'Welcome.';
-var speed = 70;
-
-function typeWriter() {
-  if (i < txt.length) {
-    document.getElementById("tw").innerText += txt.charAt(i);
-    i++;
-    setTimeout(typeWriter, speed);
-  }
-}
-typeWriter()
-</script>
 
 <p id="time"></p>
-<script>
-
-	function clock(){
-    	const date = new Date();
-
-    	document.getElementById("time").innerText = date.toLocaleTimeString();
-	}
-
-	setInterval(clock, 100);
-	
-</script>
 
 <p id="date"></p>
-<script>
-	const date = new Date()
-
-	const day = date.getDate();
-	const year = date.getFullYear();
-	const month = date.getMonth();
-
-	document.getElementById("date").innerText = `${day}/${month}/${year}`
-</script>
 
 <div id="search">
     <form action="https://duckduckgo.com/">
@@ -71,4 +36,5 @@ typeWriter()
     </ol>
 </div>
 </body>
+<script src="index.js"></script>
 </html>
