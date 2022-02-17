@@ -26,8 +26,8 @@ function getWeatherData() {
 				'weather'
 			).innerText = `${data.weather[0].main}, ${data.main.temp}°C`
 		})
-	
-	setTimeout(geatWeatherData, 10000)
+
+	setTimeout(getWeatherData, 10000)
 }
 getWeatherData()
 //#endregion
