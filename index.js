@@ -53,10 +53,22 @@ document.getElementById('date').innerText = `${day}/${month}/${year}`
 //#endregion
 
 //#region keyboard shortcuts
+let search = document.getElementById('search-box').value
+
+function getSearch() {
+	search = document.getElementById('search-box').value
+	search = search.toLowerCase()
+}
+
 document.addEventListener('keydown', (e) => {
+	getSearch()
 	switch (e.key.toLowerCase()) {
 		case '1':
-			window.open('https://beatsaver.com', '_top')
+			if (search) {
+				window.open(`https://beatsaver.com/?q=${search}`, '_top')
+			} else {
+				window.open('https://beatsaver.com/', '_top')
+			}
 			break
 		case '2':
 			window.open('https://github.com', '_top')
