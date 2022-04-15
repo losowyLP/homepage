@@ -1,11 +1,11 @@
 //#region typewriter
 var i = 0
-var txt = 'Welcome.'
+var txt = 'welcome'
 var speed = 70
 
 function typeWriter() {
 	if (i < txt.length) {
-		document.getElementById('tw').innerText += txt.charAt(i)
+		document.getElementById('welcome').innerText += txt.charAt(i)
 		i++
 		setTimeout(typeWriter, speed)
 	}

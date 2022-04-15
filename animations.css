@@ -9,6 +9,10 @@
 }
 
 
-body {
+main {
     animation: fade-in 1s;
+}
+
+a:hover {
+	opacity: 80%;
 }
