@@ -15,4 +15,5 @@ main {
 
 a:hover {
 	opacity: 80%;
+	letter-spacing: 1px;
 }
